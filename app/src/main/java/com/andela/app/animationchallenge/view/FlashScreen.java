@@ -59,10 +59,9 @@ public class FlashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity (new Intent(FlashScreen.this, MainActivity.class) );
-
-
-                //This 'finish()' is for exiting the app when back button pressed from Home page which is ActivityHome
+        //TODO Animate transition from flash screen to next page.
+                Intent intent = new Intent(FlashScreen.this, MainActivity.class);
+                startActivity (intent);
                 finish();
 
             }
